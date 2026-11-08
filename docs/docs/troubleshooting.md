@@ -26,7 +26,7 @@ Paths and device names are as configured. No addresses are shown on this page.
 
 The data disk is a sparse file: it is presented as 200 GB, but only written data uses space on the HDD.
 
-## Storage layering
+## Storage layering:
 
 ```mermaid
 flowchart TD
