@@ -8,6 +8,10 @@ This is homelab experience, not production work. The repository documents what i
 
 ## Architecture
 
+## DNS and DHCP
+
+See [docs/dns-dhcp.md](docs/dns-dhcp.md).
+
 See [docs/architecture.md](docs/architecture.md).
 
 ## Roadmap (planned, not implemented)
