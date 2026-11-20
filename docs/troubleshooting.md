@@ -24,3 +24,16 @@ Each entry follows the same format: problem, hypothesis, test, result, fix, less
 - "File exists" does not mean "file has content". Check size and contents.
 - SSH refuses keys when permissions are too open, so permissions are part of the check.
 - Work through the chain in order: client key, server file, contents, permissions.
+
+
+## Restored VM stuck at boot waiting for a disk
+
+**Problem:** A VM restored from backup paused at boot with a "start job is running" message, then stopped in emergency mode.
+
+**Hypothesis:** The system required a disk that was not part of the backup.
+
+**Test:** Inspected the restored VM's config and the console output.
+
+**Result:** The data disk had been excluded from the backup, but the operating system's mount table still required it.
+
+**Lesson:** Check what a backup excludes against what the OS requires at boot.
